@@ -1,0 +1,1 @@
+# fast-api-string-manipulations
