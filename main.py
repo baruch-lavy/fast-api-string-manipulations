@@ -46,19 +46,19 @@ def return_items():
     data = load_data()
     return data
 
-# option 1
-# @app.post("/item/")
-# def update_data(item:dict = Body()):
-#     item = item
-#     save_data('item.json',item)
-#     return item
+option 1
+@app.post("/item/")
+def update_data(item:dict = Body()):
+    item = item
+    save_data('item.json',item)
+    return item
 
-# # option 2
-# @app.post("/items/")
-# def update_data(y:dict):
-#     data_to_save = y.get('name')
-    # save_data('data.json',data_to_save)
-    # return "data saved successfully"
+# option 2
+@app.post("/items/")
+def update_data(y:dict):
+    data_to_save = y.get('name')
+    save_data('data.json',data_to_save)
+    return "data saved successfully"
 
 # option 3 : recommended
 @app.post("/items/")
