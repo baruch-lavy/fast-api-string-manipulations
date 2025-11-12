@@ -46,7 +46,7 @@ def return_items():
     data = load_data()
     return data
 
-option 1
+# option 1
 @app.post("/item/")
 def update_data(item:dict = Body()):
     item = item
